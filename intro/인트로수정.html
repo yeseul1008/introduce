@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #backimg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url(../media/반짝움짤.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    #container {
+      width: 800px;
+      background: rgba(255, 255, 255, 0.6); 
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    #header {
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      color: #ffffff;
+      text-shadow: 2px 2px 2px #7e617a;
+      padding: 40px 0px;
+      background-color: #fdb3cd;
+      background-size: cover;
+    }
+    #sidebar {
+            width: 200px;
+            height: 700px;
+            background-color: #fccedf;
+            float: left;
+            
+
+        }
+
+        #contents {
+            width: 600px;
+            height: 700px;
+            background-color: #faf6f7;
+            float: left;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .frofilebox {
+            width: 150px;
+            height: 150px;
+            border: 1px solid rgb(190, 104, 122);
+            margin: 10px auto;
+            background-image: url(../media/Hello\ Kitty\ GIF\ –\ Hello\ Kitty\ Pink\ –\ discover\ and\ share\ GIFs.gif);
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .snsbox {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 10px white;
+            text-align: center;
+            margin: 0px 5px;
+            cursor: pointer;
+        }
+
+
+        .text {
+            padding: 4px;
+        }
+
+        .midtext {
+            font-size: large;
+            font-weight: bold;
+            background-color: #fccedf;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            /* 2px 크기 검정색 선(solid)으로*/
+            border-collapse: collapse;
+            /* 겹치는 선 하나로*/
+            text-align: center;
+            /* 가운데 정렬 */
+            padding: 5px 10px;
+            /* 안쪽 여백(상하 5px, 좌우 20px)*/
+            background-color: white;
+            margin: 15px;
+        }
+        #contents ul{
+            background-color: #ffe1ec;
+            width: 100px;
+        }
+        hr{
+            margin: 20px 0px;
+        }
+        th{
+            background-color: #fdb3cd;
+        }
+        .timebox{
+            width: 180px;
+            height: 40px;
+            border: #ff90b793 solid 5px;
+            margin: 0px auto;
+            margin-top: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .time{
+            margin: 0px auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
+  </style>
+</head>
+
+<body>
+  <div id="backimg">
+    
+    <div id="container">
+      <div id="header">자기소개 홈페이지</div>
+      <div id="sidebar" class="color1">
+
+            <div class="frofilebox" style="background-size: cover;"> </div>
+            <div style="text-align: center; font-weight: bold;" class="text"> 김예슬 </div>
+            <div class="text"> 2004/10/08</div>
+            <div class="text"> Incheon, Korea </div>
+            <div class="text"> abce1234@naver.com</div>
+            <div> ========= SNS ========= </div>
+            <div style="text-align: center;" class="text">
+                <img src="../media/인스타.jpg" width="100" class="snsbox">
+                <img src="../media/카카오톡.jpg" width="100" class="snsbox">
+                <img src="../media/유튜브.jpg" width="100" class="snsbox">
+            </div>
+            <div class="timebox">
+            <div class="time"></div>
+            </div>
+        </div>
+        <div id="contents">
+            <span class="midtext">한줄 소개</span>
+            <div style="height: 20px;"> </div>
+            <div>안녕하세요! 프로그래밍을 공부중인 학생입니다!</div>
+            <div>같이 스터디해요~!</div>
+            <hr>
+            
+            <span class="midtext">보유 기술</span>
+            <div style="height: 5px;"></div>
+            <ul>
+                <li>자바</li>
+                <li>오라클</li>
+                <li>HTML</li>
+                <li>C#</li>
+                <li>파이썬</li>
+            </ul>
+            
+            <hr>
+            <span class="midtext">학력</span>
+            <table border="1">
+                <tr>
+                    <th>출신학교</th>
+                    <th>전공</th>
+                    <th>기간</th>
+                    <th>구분</th>
+                </tr>
+                <tr>
+                    <td>★★중학교</td>
+                    <td>-</td>
+                    <td>2017 ~ 2019</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>★★고등학교</td>
+                    <td>90</td>
+                    <td>2020 ~ 2022</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>★★대학교</td>
+                    <td>산업공학과</td>
+                    <td>2023~</td>
+                    <td>재학중</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+        setInterval(()=>{
+        let datetime = new Date();
+        let obj = document.querySelector(".time");
+        let time = 
+            datetime.getHours() + " : "
+            + datetime.getMinutes() + " : "
+            + datetime.getSeconds(); 
+        obj.innerHTML = time;
+    }, 1000);
+</script>
