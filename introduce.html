@@ -13,15 +13,16 @@
     }
 
     #backimg {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-image: url(media/반짝움짤.gif);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 중앙에서 상단으로 변경 */
+    min-height: 100vh;
+    background-image: url(../media/반짝움짤.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px 0; /* 위아래 여백 */
+}
 
     #container {
       width: 800px;
@@ -41,30 +42,28 @@
       background-color: #fdb3cd;
       background-size: cover;
     }
-    #sidebar {
-            width: 200px;
-            height: 700px;
-            background-color: #fccedf;
-            float: left;
-            
-
-        }
+   #sidebar {
+    width: 200px;
+    height: 700px;
+    background-color: #fccedf;
+    float: left;
+}
 
         #contents {
-            width: 600px;
-            height: 700px;
-            background-color: #faf6f7;
-            float: left;
-            box-sizing: border-box;
-            padding: 20px;
-        }
+    width: 600px;
+    height: 700px;
+    background-color: #faf6f7;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
 
         .frofilebox {
             width: 150px;
             height: 150px;
             border: 1px solid rgb(190, 104, 122);
             margin: 10px auto;
-            background-image: url(media/Hello\ Kitty\ GIF\ –\ Hello\ Kitty\ Pink\ –\ discover\ and\ share\ GIFs.gif);
+            background-image: url(../media/Hello\ Kitty\ GIF\ –\ Hello\ Kitty\ Pink\ –\ discover\ and\ share\ GIFs.gif);
             background-repeat: no-repeat;
             border-radius: 50%;
             text-align: center;
@@ -79,7 +78,53 @@
             margin: 0px 5px;
             cursor: pointer;
         }
+        /* 모바일 대응 */
+/* 모바일 대응 */
+@media (max-width: 840px) {
+    #container {
+        width: 95%;
+        min-width: auto;
+        display: block; /* float 대신 block 배치 */
+        padding: 10px;
+    }
 
+    #header {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    #sidebar {
+        float: none;          /* float 해제 */
+        width: 100%;          /* 폭 100% */
+        height: 700px;         /* 내용에 맞게 높이 자동 */
+        margin: 0 0 20px 0;   /* 아래 여백 */
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #fccedf; /* 모바일에서도 배경 유지 */
+        border-radius: 10px;       /* 박스 느낌 살리기 */
+    }
+
+    #sidebar .frofilebox {
+        margin: 10px auto;    /* 프로필 중앙 정렬 */
+        width: 120px;
+        height: 120px;
+        background-size: cover;
+    }
+
+    #sidebar .text, #sidebar div, #sidebar a {
+        word-wrap: break-word; /* 내용이 삐져나오지 않게 */
+        text-align: center;
+    }
+
+    #contents {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+        box-sizing: border-box;
+        padding: 20px 10px;
+    }
+}
 
         .text {
             padding: 4px;
@@ -153,7 +198,7 @@
   <div id="backimg">
     
     <div id="container">
-      <div id="header">★ 자기소개 홈페이지 ★</div>
+      <div id="header">★자기소개 홈페이지★</div>
       <div id="sidebar" class="color1">
 
             <div class="frofilebox" style="background-size: cover;"> </div>
@@ -163,14 +208,14 @@
             <div class="text"> ◎ abce1234@naver.com</div>
             <div> ========= SNS ========= </div>
             <div style="text-align: center;" class="text">
-                <a href="https://youtu.be/js1CtxSY38I?si=Y4WphN9EROkbrHQl"><img src="media/인스타.jpg" width="100" class="snsbox"></a>
-                <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk"><img src="media/카카오톡.jpg" width="100" class="snsbox"></a>
-                <a href="https://youtu.be/ft70sAYrFyY?si=E0nOWB3vIFOvoJfC"><img src="media/유튜브.jpg" width="100" class="snsbox"></a>
+                <a href="https://youtu.be/js1CtxSY38I?si=Y4WphN9EROkbrHQl"><img src="../media/인스타.jpg" width="100" class="snsbox"></a>
+                <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk"><img src="../media/카카오톡.jpg" width="100" class="snsbox"></a>
+                <a href="https://youtu.be/ft70sAYrFyY?si=E0nOWB3vIFOvoJfC"><img src="../media/유튜브.jpg" width="100" class="snsbox"></a>
             </div>
             <div class="timebox">
             <div class="time"></div>
             <div class="nowtime">♬현재시간♬</div>
-            <div><img id="changeimage" src="media/하니.jpg" width="150px" height="150px" class="chimg"></div>
+            <div><img id="changeimage" src="../media/하니.jpg" width="150px" height="150px" class="chimg"></div>
             <div class="nowtime">마우스를 올려보세요 ♪</div>
             </div>
         </div>
@@ -238,10 +283,10 @@
 
         let img = document.querySelector("#changeimage");
     img.addEventListener("mouseover", ()=>{
-        img.src = "media/해린.jpg";
+        img.src = "../media/해린.jpg";
     });
         img.addEventListener("mouseout", ()=>{
-        img.src = "media/하니.jpg";
+        img.src = "../media/하니.jpg";
     });
     // 이벤트 종류
     // mouseover, mouseout
@@ -250,5 +295,4 @@
     // mousedown => 마우스 누르고있을떄
     // mouseip => 마우스 뗏을 때
     // mousemove =>마우스 움직일 때
-
 </script>
