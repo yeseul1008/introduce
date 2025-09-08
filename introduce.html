@@ -15,13 +15,13 @@
     #backimg {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* 중앙에서 상단으로 변경 */
+    align-items: flex-start; 
     min-height: 100vh;
     background-image: url(media/반짝움짤.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 20px 0; /* 위아래 여백 */
+    padding: 20px 0; /
 }
 
     #container {
@@ -29,7 +29,7 @@
       background: rgba(255, 255, 255, 0.6); 
       padding: 20px;
       border-radius: 12px;
-      min-width: 800px; /* 최소 폭 고정 */
+      min-width: 800px; 
     }
 
     #header {
@@ -58,7 +58,7 @@
     padding: 20px;
 }
 
-        .frofilebox {
+.frofilebox {
             width: 150px;
             height: 150px;
             border: 1px solid rgb(190, 104, 122);
@@ -67,9 +67,9 @@
             background-repeat: no-repeat;
             border-radius: 50%;
             text-align: center;
-        }
+}
 
-        .snsbox {
+.snsbox {
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -77,14 +77,13 @@
             text-align: center;
             margin: 0px 5px;
             cursor: pointer;
-        }
-        /* 모바일 대응 */
-/* 모바일 대응 */
+}
+
 @media (max-width: 840px) {
     #container {
         width: 95%;
         min-width: auto;
-        display: block; /* float 대신 block 배치 */
+        display: block; 
         padding: 10px;
     }
 
@@ -94,25 +93,25 @@
     }
 
     #sidebar {
-        float: none;          /* float 해제 */
-        width: 100%;          /* 폭 100% */
-        height: 700px;         /* 내용에 맞게 높이 자동 */
-        margin: 0 0 20px 0;   /* 아래 여백 */
+        float: none;     
+        width: 100%;         
+        height: 700px;         
+        margin: 0 0 20px 0;   
         box-sizing: border-box;
         padding: 10px;
-        background-color: #fccedf; /* 모바일에서도 배경 유지 */
-        border-radius: 10px;       /* 박스 느낌 살리기 */
+        background-color: #fccedf; 
+        border-radius: 10px;       /
     }
 
     #sidebar .frofilebox {
-        margin: 10px auto;    /* 프로필 중앙 정렬 */
+        margin: 10px auto;    
         width: 120px;
         height: 120px;
         background-size: cover;
     }
 
     #sidebar .text, #sidebar div, #sidebar a {
-        word-wrap: break-word; /* 내용이 삐져나오지 않게 */
+        word-wrap: break-word; 
         text-align: center;
     }
 
@@ -143,13 +142,13 @@
         td,
         th {
             border: 1px solid black;
-            /* 2px 크기 검정색 선(solid)으로*/
+         
             border-collapse: collapse;
-            /* 겹치는 선 하나로*/
+
             text-align: center;
-            /* 가운데 정렬 */
+
             padding: 5px 10px;
-            /* 안쪽 여백(상하 5px, 좌우 20px)*/
+
             background-color: white;
             margin: 15px;
         }
@@ -290,3 +289,4 @@
     });
 
 </script>
+
